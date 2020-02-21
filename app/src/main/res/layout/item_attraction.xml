@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    >
+    <data>
+        <variable
+            name="attraction"
+            type="com.bahr.assessmenttask.model.Attraction"/>
+    </data>
+
+<LinearLayout
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginRight="@dimen/home_small_margin">
+
+
+    <ImageView
+        android:id="@+id/ivPic"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        bind:avatar="@{attraction.photos}"
+        />
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        bind:text="@{attraction.name}"
+        />
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/category"
+        bind:category="@{attraction.categories}"
+        />
+
+</LinearLayout>
+
+</layout>
+

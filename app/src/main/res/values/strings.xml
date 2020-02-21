@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AssessmentTask</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="hotspots">Hotspots</string>
+    <string name="view_all">View all</string>
+    <string name="events">Events</string>
+    <string name="attraction">Attraction</string>
+    <string name="no_connection">No internet connection </string>
+
+
+</resources>
